@@ -20,15 +20,10 @@ let selectedOption = document.getElementsByName('option');
 let nbClick=0;
 let nbClickMax=1;
 let titre = document.getElementById('titre');
+let current = document.getElementById('current');
 
-// Limite le nombre de click à 1 par question sur le btn valider
-function compter(){
-    nbClick++;
-    if(nbClick>=nbClickMax)
-    {
-        validBtn.disabled=true;
-    }
-}
+//désactive next question
+nextButton.disabled = true
 
 //Chargement du questionnaire
 function loadQuestion (questionIndex) {
@@ -58,10 +53,11 @@ validBtn.addEventListener('click', checkAnswer,)
             resultat += selectedOption[i].value  + ", ";
         }
         }
- 
-        // Si aucunne réponse n'est séléctionné
+
+        // Si aucunne réponse n'est séléctionnée
     if(resultat == '' ){
         validBtn.disabled=false
+        nextButton.disabled=true
         message.innerHTML = 'Selectionnez au moins une réponse';
         message.style.background ="gray";
         message.style.color ="white";
@@ -92,8 +88,23 @@ validBtn.addEventListener('click', checkAnswer,)
     }
 }
 
+// Compte le nombre de click sur valider. Si 1 click : désactive valider. Si valider est désactiver alors on peut next question
+function compter(){
+    
+    nbClick++;
+    if(nbClick>=nbClickMax)
+    {
+        validBtn.disabled=true;
+        
+        if (validBtn.disabled == true) {
+        nextButton.disabled = false
+    }
+    }
+}
+
 //Fonction question suivante
 function loadNextQuestion () {
+    nextButton.disabled=true
     validBtn.disabled=false
     messageIcon.innerHTML = "";
     message.innerHTML = "";
@@ -111,9 +122,10 @@ currentQuestion++;
 if (currentQuestion == totQuestions - 1) {
     nextButton.textContent = "Finir";
 }
-
+current.innerHTML = (currentQuestion + 1) + "/" + totQuestions; 
 //Si currentQuestion == totalQuestions alors questionnaire fini, on affiche le score seulement
 if (currentQuestion == totQuestions) {
+    current.innerHTML = "";
     container.style.display = 'none';
     resultCont.style.display = '';
     if (score > totQuestions/2) {
@@ -124,6 +136,9 @@ if (currentQuestion == totQuestions) {
         resultCont.textContent = 'Insuffisant, votre Score est: ' + score+'/'+ totQuestions;
     }
 }
+
+console.log(currentQuestion)
+
 
 //Chargement question en cours
 loadQuestion(currentQuestion);
