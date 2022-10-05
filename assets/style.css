@@ -1,0 +1,233 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #6cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh auto;
+}
+
+header{
+    /* position: absolute; */
+    width: 100%;
+    top:0;
+    height: 100px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+footer{
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+p.footer{
+    color: #000;
+}
+
+.containerCards{
+    background-color: #6cf;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.titreCard{
+    font-size: 29px;
+}
+
+span.module{
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.cardContent{
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    height: 300px;
+    width: 100%;
+    object-fit:cover;
+    
+}
+
+.container{
+    height: 380px;
+    width:100% ;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 1px solid #08038C;
+    box-shadow: 0 0 8px 3px #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #08038C;
+    margin: 20px;
+}
+
+.containerQuest{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.question{
+    padding: 20px;
+    font-size: 22px;
+    background: #08038C;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+    text-align: center;
+    
+}
+
+/* .quest{
+    margin-left:10px ;
+} */
+
+.option{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.5);
+    margin : 10px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.option:hover{
+    background:#08038C;
+    color: #f6f6f6;
+}
+
+.elementQuiz{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valid-btn{
+    border: none;
+    outline: none;
+    background-color: rgb(14, 182, 14);
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+}
+
+.valid-btn:hover{
+    background-color: rgb(5, 83, 5);
+}
+
+.next-btn{
+    border: none;
+    outline: none;
+    background:#08038C;
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.next-btn:hover{
+    background: #08038C;
+    color: #f6f6f6;
+}
+.score{
+    background-color: #08038C;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.message{
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    font-size: 30px;
+    
+}
+
+.messageIcon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+.result{
+    height: 150px;
+    text-align: center;
+    font-size: 75px;
+    background-color: rgba(97, 45, 26, 0.488);
+    color: #fff;
+}
+
+.option input:checked .option{
+    background: #08038C;
+    color: #000;
+}
