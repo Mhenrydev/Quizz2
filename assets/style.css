@@ -95,7 +95,7 @@ img{
     box-shadow: 0 0 8px 3px #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -110,8 +110,7 @@ img{
 
 .containerQuest{
 display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
 }
 
@@ -132,11 +131,11 @@ align-items: center;
 
 .option{
     width: 470px;
-    display: inline-block;
+    display: flex;
     padding: 10px 0 10px 15px;
     vertical-align: middle;
     background: rgba(255, 255, 255, 0.5);
-    margin : 10px 0 10px 10px;
+    margin : 15px 0 15px 10px;
     color: #000000;
     border-radius: 20px;
 }
@@ -149,7 +148,7 @@ align-items: center;
 .elementQuiz{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -157,7 +156,7 @@ align-items: center;
     border: none;
     outline: none;
     background-color: rgb(14, 182, 14);
-    width: 150px;
+    width: 13%;
     height: 35px;
     border-radius: 20px;
     cursor: pointer;
@@ -172,12 +171,11 @@ align-items: center;
 .next-btn{
     border: none;
     outline: none;
-    background:#08038C;
-    width: 170px;
+    background:#08038cb4;
+    width: 13%;
     height: 35px;
     border-radius: 20px;
     cursor: pointer;
-    margin: 10px;
     color: white;
     padding: 5px;
 }
@@ -188,7 +186,7 @@ align-items: center;
 }
 .score{
     background-color: #08038C;
-    width: 150px;
+    width: 13%;
     height: 50px;
     border-radius: 20px;
     font-size: 30px;
@@ -198,14 +196,16 @@ align-items: center;
 }
 
 .message{
-    width: 600px;
+    width: 55%;
     height: 50px;
     border-radius: 20px;
     font-size: 30px;
     text-align: center;
     color: black;
-    background-color: transparent;
+    background-color:"";
     font-size: 30px;
+    font-weight: 600;
+
     
 }
 
@@ -215,7 +215,8 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 60px;
+    
 }
 
 
@@ -238,4 +239,242 @@ align-items: center;
     font-size: 27px;
     text-align: center;
     font-weight: 600;
+}
+
+#vrai{
+    background-color: green;
+}
+@media screen and (max-width: 1200px) {
+
+    .containerCards{
+        background-color: #6cf;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .containerQuest{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        height: auto;
+        
+    }
+
+    .messageIcon{
+        display: none;
+    }
+
+    .next-btn{
+        height: 50px;
+        
+    }
+
+    .valid-btn{
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .elementQuiz{
+        height: 100px;
+    }
+
+    .card{
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .elementQuiz{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .message{
+        width: 100%;
+    }
+
+    .score{
+
+        width: 50%;
+    
+    }
+
+    .valid-btn{
+        width: 50%;
+        height: 55px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    
+
+    .next-btn{
+        width: 50%;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .containerCards{
+        background-color: #6cf;
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+
+    .card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+body{
+    margin: 0;
+    padding: 0;
+}
+
+    .containerQuest{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        height: auto;
+        
+    }
+
+    .messageIcon{
+        display: none;
+    }
+
+    .elementQuiz{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .message{
+        width: 100%;
+    }
+
+    .score{
+
+        width: 50%;
+    
+    }
+
+    .valid-btn{
+        width: 50%;
+        height: 55px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    
+
+    .next-btn{
+        width: 50%;
+        height: 55px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .elementQuiz{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 370px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 514px) {
+
+    .containerQuest{
+        width: 100%;
+    }
+
+    label.option{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+
+    input{
+        font-size: 26px;
+    }
+
+    .next-btn{
+        height: 60px;
+    }
+
+    .elementQuiz{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 350px;
+        padding: 10px;
+    }
+
+    .message{
+        width: 100%;
+        height: 120px;
+    }
+
+    span.opt{
+        width: 100%;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grpOpt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

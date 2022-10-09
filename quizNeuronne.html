@@ -42,22 +42,27 @@
     <div id="quizContainer" class="container">
         <div id="question" class="question"></div>
         <div class="containerQuest">
+          <div>
             <label class="option">[1]<input class="form-check-input mx-2" type="checkbox" name="option" value="1"/><span id="opt1"></span></label>
             <label class="option">[2]<input class="form-check-input mx-2" type="checkbox" name="option" value="2"/><span id="opt2"></span></label>
+          </div>
+            <span id="messageIcon" class="messageIcon"></span>
+
+            <div>
             <label class="option">[3]<input class="form-check-input mx-2" type="checkbox" name="option" value="3"/><span id="opt3"></span></label>
-            <label class="option">[4]<input class="form-check-input mx-2" type="checkbox" name="option" value="4"/><span id="opt4"></span></label>
-            
+            <label class="option">[4]<input class="form-check-input mx-2" type="checkbox" name="option" value="4"/><span id="opt4"></span></label> 
+          </div>         
         </div>
 
         <div class="elementQuiz">
             <span id="score" class="score"></span>
-            <span id="messageIcon" class="messageIcon"></span>
             <span id="message" class="message"></span>
             <button id="valid-btn" onclick="compter()" class="valid-btn" type="submit">Valider</button>
             <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Question suivante</button>
         </div>
 
     </div>
+    <div class="current" id="current"></div>
     <div id="result" class="container result" style="display:none;">
     </div>
     <script src="assets/questions.js"></script>
