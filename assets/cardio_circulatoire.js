@@ -1,6 +1,6 @@
 let currentQuestion = 0;
 let score = 0;
-let totQuestions = questionsRespiratoire.length;
+let totQuestions = QuestionsCardio_circulatoire.length;
 let container = document.getElementById('quizContainer');
 let questionEl = document.getElementById('question');
 let opt1 = document.getElementById('opt1');
@@ -29,7 +29,7 @@ nextButton.disabled = true
 
 //Chargement du questionnaire
 function loadQuestion (questionIndex) {
-    let q = questionsRespiratoire[questionIndex];
+    let q = QuestionsCardio_circulatoire[questionIndex];
     // q = questionsCPAM.sort(() => 0.5 - Math.random())[questionIndex];
     titre.innerHTML = q.titre;
     scoreAffiche.innerHTML = "Score: " + score;
@@ -68,8 +68,8 @@ validBtn.addEventListener('click', checkAnswer,)
 
     //Recupération des reponses dans le fichier questionnaire et comparaison avec resultat des checkbox
     answer_tab = "";
-    for (let index = 0; index < questionsRespiratoire[currentQuestion].answer.length; index++) {
-        answer_tab += questionsRespiratoire[currentQuestion].answer[index] + ", ";
+    for (let index = 0; index < QuestionsCardio_circulatoire[currentQuestion].answer.length; index++) {
+        answer_tab += QuestionsCardio_circulatoire[currentQuestion].answer[index] + ", ";
     }
 
     // Si le resultat des reponses séléctionné est égale aux réponse du questionnaire

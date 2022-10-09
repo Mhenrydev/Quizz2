@@ -157,7 +157,56 @@ let questionsCPAM = [
                 "3",
                 "4"
             ]
-        }
+        },
+        {
+            "titre": "Protection sociale et acces aux soins",
+            "question": "charte du patient hospitalisé : parmi les positions suivantes, quelles sont les bonnes réponses ?",
+            "option1": "Un acte médical ne peut être pratiqué qu'avec le consentement libre et éclairé du patient.",
+            "option2": "La personne hospitalisée ne peut pas décider de quitter l'établissement.",
+            "option3": "La personne hospitalisée peut exprimer des observations sur les soins et sur l'accueil qu'elle a reçus.",
+            "option4": "Un patient hospitalisé en service libre de psychiatrie ne dispose pas des mêmes droits que lors d'une hospitalisation à l'hôpital général",
+            "option5": "Le patient bénéficie d'un accès direct au contenu de son dossier médical.",
+            "option6": "La personne hospitalisée doit régler les soins non pris en charge à son arrivée",
+            "answer": [
+                "1",
+                "3",
+                "5"
+            ]
+        },
+        {
+            "titre": "Protection sociale et acces aux soins",
+            "question": "Vous êtes AS en EHPAD. Me S. présente des troubles du sommeil.  Citez 5 actions ou activités d'aide de votre compétence que vous pouvez mettre en place",
+            "option1": "Lui proposer d'aller aux WC",
+            "option2": "Créer une atmosphère calme : regrouper les soins, réduire le bruit dans le couloir, répondre rapidement aux sonnettes",
+            "option3": "S'enquérir de ses habitudes de vie concernant le coucher, au niveau du recueil de données et/ou du projet de vie individualisé",
+            "option4": "Soliciter le médecin afin de lui prescrire une aide médicamenteuse",
+            "option5": "Aide pour l'installation au lit en respectant ses habitudes et ses souhaits (nombre de couverture, position d'endormissement, musique douce, veilleuse)",
+            "option6": "Mettre le système d'appel à proximité ",
+            "answer": [
+                "1",
+                "2",
+                "3",
+                "5",
+                "6"
+            ]
+        },
+        {
+            "titre": "Protection sociale et acces aux soins",
+            "question": "Me S. présente une DTS. Vous vous occupez d'elle, ce jour, en EHPAD. Elle est valide et aime participer aux activités. Citez 5 actions ou activités d'aide de votre compétence que vous pouvez mettre en place.",
+            "option1": "L'accompagner aux activités",
+            "option2": "Prendre toujours les mêmes parcours pour les déplacements",
+            "option3": "Lui donner des repères en cours de chemin : emplacement ascenseur, salle de soin, couleur des couloirs empruntés, éléments de décoration divers, son nom sur la porte de sa chambre ou sur les portes des différentes pièces à vivre de l'EHPAD",
+            "option4": "Le rassurer en l'encourageant à se déplacer seul car peut toujours demander son chemin.",
+            "option5": "La motiver en lui assurant qu'elle pourra participer à aux activités si elle fini son repas",
+            "option6": "Lui indiquer plusieurs fois par jour l'heure, la saison, si c'est le matin l'après-midi",
+            "answer": [
+                "1",
+                "2",
+                "3",
+                "5",
+                "6"
+            ]
+        },
     
     
 ]
