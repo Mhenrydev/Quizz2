@@ -461,7 +461,7 @@ let questionsRespiratoire = [
                     "option2":"un manque d’O2", 
                     "option3":"un manque d’H2O", 
                     "answer": [
-                        "3"
+                        "2"
                     ]
         
                 },
@@ -492,7 +492,7 @@ let questionsRespiratoire = [
                 },
                 {
                     "titre": "Système Respiratoire",
-                    "question":"Les cordes vocales se situent dans : (trouvez la bonne réponse) a) l’œsophage", 
+                    "question":"Les cordes vocales se situent dans : (trouvez la bonne réponse), 
                     "option1":"l’œsophage", 
                     "option2":"la trachée", 
                     "option3":"le larynx", 
@@ -658,7 +658,7 @@ let QuestionsCardio_circulatoire = [
             },
             {
                 "titre": "Appareil Cardio-circulatoire",
-                "question":"La douleur thoracique ", 
+                "question":"La douleur thoracique (trouvez les bonnes réponses) ", 
                 "option1":"est systématiquement sans gravité", 
                 "option2":"nécessite de mesurer la Tension Artérielle aux deux bras", 
                 "option3":"est plus inquiétante chez l’homme que chez la femme", 
@@ -671,7 +671,7 @@ let QuestionsCardio_circulatoire = [
             },
             {
                 "titre": "Appareil Cardio-circulatoire",
-                "question":"La Tension Artérielle ne peut pas être mesurée :", 
+                "question":"La Tension Artérielle ne peut pas être mesurée (trouvez les bonnes réponses) :", 
                 "option1":"par un aide-soignant", 
                 "option2":"du côté d’une Fistule Artério Veineuse", 
                 "option3":"du côté d’une mammectomie", 
