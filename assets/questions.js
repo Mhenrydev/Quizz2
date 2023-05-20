@@ -492,7 +492,7 @@ let questionsRespiratoire = [
                 },
                 {
                     "titre": "Système Respiratoire",
-                    "question":"Les cordes vocales se situent dans : (trouvez la bonne réponse), 
+                    "question":"Les cordes vocales se situent dans : (trouvez la bonne réponse)", 
                     "option1":"l’œsophage", 
                     "option2":"la trachée", 
                     "option3":"le larynx", 
