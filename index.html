@@ -1,121 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/87360a353b.js" crossorigin="anonymous"></script>     <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <title>Quizz Aide soignant</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/87360a353b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Quizz Aide soignant</title>
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJHVSZ7MSC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-HJHVSZ7MSC');
 </script>
 
 <body>
-<!-- Navbar -->
-<header>
+  <!-- Navbar -->
+  <header>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Acceuil</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link disabled">Autre</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Acceuil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Autre</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-</header>
+      </div>
+    </nav>
+  </header>
 
-<main>
-<div class="containerCards">
-    <div class="card">
-      <div class="cardContent text-center">
-        <div class="card-header py-3">
-          <h2 class="my-0 fw-normal titreCard">Protection sociale + divers<span class="module">M1</span></h2>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title pricing-card-title">13 questions</h3>
-          <div class="img">
-            <img src="./assets/image/logo-CPAM.jpg" alt="cpam">
+  <main>
+    <div class="containerCards">
+      <div class="card">
+        <div class="cardContent text-center">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal titreCard">Protection sociale + divers<span class="module">M1</span></h2>
           </div>
-          <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quiz.html">Lancer le Quiz</a>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">13 questions</h3>
+            <div class="img">
+              <img src="./assets/image/logo-CPAM.jpg" alt="cpam">
+            </div>
+            <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quiz.html">Lancer le Quiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardContent text-center">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal titreCard">Systeme neurologique <span class="module">M3</span></h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">12 questions</h3>
+            <div class="img">
+              <img src="./assets/image/systemeNerveu.jpg" alt="cpam">
+            </div>
+            <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quizNeuronne.html">Lancer le
+              Quiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardContent text-center">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal titreCard">Systeme respiratoire <span class="module">M3</span></h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">16 questions</h3>
+            <div class="img">
+              <img src="./assets/image/systeme_respiratoire.jpg" alt="cpam">
+            </div>
+            <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quizRespiratoire.html">Lancer
+              le Quiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardContent text-center">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal titreCard">Appareil Cardio-Circulatoire <span class="module">M3</span></h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">10 questions</h3>
+            <div class="img">
+              <img src="./assets/image/appareil-cardiovasculaire.jpg" alt="cpam">
+            </div>
+            <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest"
+              href="quizCardio_circulatoire.html">Lancer le Quiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardContent text-center">
+          <div class="card-header py-3">
+            <h2 class="my-0 fw-normal titreCard">Appareil Digestif <span class="module">M3</span></h2>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title pricing-card-title">14 questions</h3>
+            <div class="img">
+              <img src="./assets/image/Tube-digestif-digestion.jpg" alt="digestif">
+            </div>
+            <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quizDigestif.html">Lancer
+              le Quiz</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="cardContent text-center">
-        <div class="card-header py-3">
-          <h2 class="my-0 fw-normal titreCard">Systeme neurologique <span class="module">M3</span></h2>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title pricing-card-title">12 questions</h3>
-          <div class="img">
-            <img src="./assets/image/systemeNerveu.jpg" alt="cpam">
-          </div>
-          <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quizNeuronne.html">Lancer le Quiz</a>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="cardContent text-center">
-        <div class="card-header py-3">
-          <h2 class="my-0 fw-normal titreCard">Systeme respiratoire <span class="module">M3</span></h2>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title pricing-card-title">16 questions</h3>
-          <div class="img">
-            <img src="./assets/image/systeme_respiratoire.jpg" alt="cpam">
-          </div>
-          <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quizRespiratoire.html">Lancer le Quiz</a>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="cardContent text-center">
-        <div class="card-header py-3">
-          <h2 class="my-0 fw-normal titreCard">Appareil Cardio-Circulatoire <span class="module">M3</span></h2>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title pricing-card-title">10 questions</h3>
-          <div class="img">
-            <img src="./assets/image/appareil-cardiovasculaire.jpg" alt="cpam">
-          </div>
-          <a type="button" class="w-100 mt-2 btn btn-lg btn-primary selectQuest" href="quizCardio_circulatoire.html">Lancer le Quiz</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+  </main>
 
-<footer class="mt-auto text-white-50 bg-light">
+  <footer class="mt-auto text-white-50 bg-light">
     <p class="footer">&copy; 2022 Quiz-Aide-soignant.com / Droits reservés Fatia</p>
   </footer>
   <script src="assets/questions.js"></script>
-  <script src="assets/app.js"></script> 
-  <script src="assets/neuronne.js"></script> 
+  <script src="assets/app.js"></script>
+  <script src="assets/neuronne.js"></script>
+  <script src="assets/digestif.js"></script>
+
 </body>
+
 </html>

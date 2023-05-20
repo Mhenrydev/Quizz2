@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/87360a353b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Quizz Aide soignant</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HJHVSZ7MSC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJHVSZ7MSC');
+</script>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Acceuil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Autre</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="title" id="titre"></div>
+    <div id="quizContainer" class="container">
+        <div id="question" class="question"></div>
+        <div class="containerQuest">
+            <div class="grpOpt">
+                <label class="option">[1]<input class="form-check-input mx-2" type="checkbox" name="option"
+                        value="1" /><span class="opt" id="opt1"></span></label>
+                <label class="option">[2]<input class="form-check-input mx-2" type="checkbox" name="option"
+                        value="2" /><span class="opt" id="opt2"></span></label>
+            </div>
+            <span id="messageIcon" class="messageIcon"></span>
+            <div class="grpOpt">
+                <label class="option">[3]<input class="form-check-input mx-2" type="checkbox" name="option"
+                        value="3" /><span class="opt" id="opt3"></span></label>
+                <label class="option">[4]<input class="form-check-input mx-2" type="checkbox" name="option"
+                        value="4" /><span class="opt" id="opt4"></span></label>
+            </div>
+
+        </div>
+
+        <div class="elementQuiz">
+            <span id="score" class="score"></span>
+            <span id="message" class="message"></span>
+            <button id="valid-btn" onclick="compter()" class="valid-btn" type="submit">Valider</button>
+            <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Question suivante</button>
+        </div>
+
+    </div>
+    <div class="current" id="current"></div>
+    <div id="result" class="container result" style="display:none;">
+    </div>
+    <script src="assets/questions.js"></script>
+    <script src="assets/digestif.js"></script>
