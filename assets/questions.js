@@ -430,7 +430,7 @@ let questionsRespiratoire = [
                     "question":"La plèvre : (trouvez les bonnes réponses) :", 
                     "option1":"contient de l’air", 
                     "option2":"participe aux échanges gazeux", 
-                    "option3":"permet aux poumons de suivre les mouvements de la cage thoracique d) est une double membrane ", 
+                    "option3":"permet aux poumons de suivre les mouvements de la cage thoracique", 
                     "option4":"est une double membrane", 
                     "answer": [
                         "3",
