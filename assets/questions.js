@@ -658,7 +658,7 @@ let QuestionsCardio_circulatoire = [
             },
             {
                 "titre": "Appareil Cardio-circulatoire",
-                "question":"La douleur thoracique (trouvez les bonnes réponses) ", 
+                "question":"La douleur thoracique", 
                 "option1":"est systématiquement sans gravité", 
                 "option2":"nécessite de mesurer la Tension Artérielle aux deux bras", 
                 "option3":"est plus inquiétante chez l’homme que chez la femme", 
@@ -671,7 +671,7 @@ let QuestionsCardio_circulatoire = [
             },
             {
                 "titre": "Appareil Cardio-circulatoire",
-                "question":"La Tension Artérielle ne peut pas être mesurée (trouvez les bonnes réponses) :", 
+                "question":"La Tension Artérielle ne peut pas être mesurée:", 
                 "option1":"par un aide-soignant", 
                 "option2":"du côté d’une Fistule Artério Veineuse", 
                 "option3":"du côté d’une mammectomie", 
